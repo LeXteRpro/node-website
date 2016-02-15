@@ -35,6 +35,25 @@ nav a {
 	padding: 10px;
 }
 
+.btn-primary.active, .btn-primary {
+	background-color: rgba(250, 250, 250, 0.1);
+	border: 1px solid green;
+	margin: 15px;
+	color: #F5F5F5;
+
+	transition-property: font-size, color, background-color;
+    transition-timing-function: linear, ease-in-out;
+    transition-duration: 0.4s, 0.4s;
+}
+
+.btn-primary.active, .btn-primary:hover {
+	background-color: rgba(250, 250, 250, 0.5);
+	border: 1px solid green;
+	margin: 15px;
+	color: #F5F5F5;
+}
+
+
 /* Nav ul Styling */
 ul.nav.nav-tabs.navbar-right {
 	border-bottom: none;
