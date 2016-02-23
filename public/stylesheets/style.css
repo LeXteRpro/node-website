@@ -1,9 +1,16 @@
-
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background: black;
   overflow: auto;
-	margin-bottom: 100px;
+  height: 100%;
+	padding-bottom: 300px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c4c4c+0,050505+0,131313+100 */
+background: rgb(76,76,76); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(76,76,76,1) 0%, rgba(5,5,5,1) 0%, rgba(19,19,19,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(76,76,76,1) 0%,rgba(5,5,5,1) 0%,rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(76,76,76,1) 0%,rgba(5,5,5,1) 0%,rgba(19,19,19,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 
 /* General Styling */
