@@ -2,53 +2,144 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background: black;
+  overflow: auto;
+	margin-bottom: 100px;
+
+
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, ul, li {
 	color: #F5F5F5;
 }
 
 h1 {
-	font-size: 5em;
+	font-size: 4em;
+	margin-bottom: 30px;
+
 }
 
 h2 {
-	font-size: 3em;
+	font-size: 2.5em;
 
 }
 
 p {
+	line-height: 1.6;
+	font-size: 1.3em;
+}
+
+
+.services-page ul li {
+	line-height: 1.5;
+	font-size: 1.8em;
+}
+
+.services-page ul li ul li {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+/* p elements just for main page */
+.main-page p {
 	font-size: 1.6em;
+}
+
+.about-page .row {
+	text-align: center;
+}
+
+.projects-page h2 {
+	margin-bottom: 15px;
+}
+
+.projects-page p {
+	font-size: 1.2em;
+}
+
+.projects-page a {
+	font-size: 1.2em;
+}
+
+/* Center Bootstrap Grid Columns */
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.services-page .more-work p {
+	font-size: 2.5em;
 }
 
 nav {
 	width: 100%;
 }
 
-nav a {
+
+nav li:hover {
+	background-color: rgba(220,220,220,0.2);
+}
+
+.nav-tabs > li > a {
+font-size: 1.2em;
   color: #00B7FF;
   color: green;
+  transition-property: font-size, color, background-color;
+  transition-timing-function: linear, ease-in-out;
+  transition-duration: 1s, 1s;
 }
+
+.nav-tabs > li > a:hover {
+	font-size: 1.3em;
+	background-color: rgba(220,220,220,0.3);
+	border: none;
+	color: green;
+}
+
+.logo a {
+	text-decoration: none;
+}
+
+.logo h3 {
+	font-size: 2.4em;
+	transition-property: font-size, color, background-color;
+  transition-timing-function: linear, ease-in-out;
+  transition-duration: 1s, 1s;
+}
+
+.logo h3:hover {
+	color: green;
+	text-decoration: none;
+}
+
+
 
 /* Navigation Row Styles */
 .header-nav {
 	padding: 10px;
+	height: 75px;
+
 }
 
 .btn-primary.active, .btn-primary {
-	background-color: rgba(250, 250, 250, 0.1);
-	border: 1px solid green;
 	margin: 15px;
-	color: #F5F5F5;
-
+	border-color: #F5F5F5;
 	transition-property: font-size, color, background-color;
     transition-timing-function: linear, ease-in-out;
     transition-duration: 0.4s, 0.4s;
+    font-size: 1.7em;
 }
 
+/* Hover Effect */
+.btn-primary.active:hover, .btn-primary:hover {
+	border-color: gray;
+	background-color: rgba(0,100,0,0.2);
+	
+}
+
+
 .btn-primary.active, .btn-primary:hover {
-	background-color: rgba(250, 250, 250, 0.5);
-	border: 1px solid green;
+	background-color: transparent;
+	border-color:;
 	margin: 15px;
 	color: #F5F5F5;
 }
@@ -58,7 +149,7 @@ nav a {
 ul.nav.nav-tabs.navbar-right {
 	border-bottom: none;
 	margin: 10px 10px auto auto;
-	width: 450px;
+	width: 550px;
 }
 
 /* Selected Nav Link */
@@ -69,9 +160,127 @@ ul.nav.nav-tabs.navbar-right {
 	border-bottom: 1px solid white;
 }
 
-
+/* Home Page Main area */
 .main-page {
-	margin-top: 250px;
+	margin-top: 150px;
 	text-align: center;
+}
+
+/* Icon Size */
+.icon {
+	font-size: 8em;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+
+/* Images */
+.portfolio-images {
+	max-width: 250px;
+	float: left;
+	padding-right: 15px;
+	border-radius: 5px;
+}
+
+/* Projects Page Adjust grid */
+.portfolio .col-md-4:first-of-type {
+	margin-right: 15px;
+}
+
+.portfolio:last-of-type {
+	margin-bottom: 40px;
+}
+
+.services-page .services-list {
+	margin-bottom: 30px;
+}
+
+/* Center Contact Form */
+#contact-form {
+	float: none;
+    margin: 0 auto;
+}
+
+
+/* FORM STYLES */
+.form-layout {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    max-width: 500px;
+    background-color: rgba(100, 110, 100, 0.1);
+    padding: 20px 30px 20px 30px;
+    font: inherit;
+    color: #D3D3D3;
+    text-shadow: 1px 1px 1px #444;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+
+.form-layout label>span {
+    float: left;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+
+.form-layout input {
+	padding: 10px;
+	margin-bottom: 10px;
+	color: black;
+	width: 350px;
+
+}
+
+.form-layout textarea {
+	width: 350px;
+    height:150px;
+    padding: 5px 0px 0px 5px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    color: black;
+
+}
+
+/* Center Button */
+.button-wrapper {
+	width: 100%;
+    text-align: center;	
+}
+
+.button-wrapper ul li {
+	list-style-type: none
+}
+
+/* Button Background color*/
+.form-layout .button {
+	background-color: transparent;
+	transition: background-color 1s;
+	font-size: 1.6em;
+
+}
+
+
+#footer {
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding-right: 10px;
+	background-color: rgba(107,106,106,0.3);
+	position: fixed;
+
+}
+
+#footer p {
+	text-align: right;
+	padding: 20px;
+	font-size: 1.1em;
+	margin: 0;
+
 }
 
